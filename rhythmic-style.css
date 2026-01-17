@@ -1,0 +1,18 @@
+:root {
+  --presence-drift: 0.5;
+}
+
+body {
+  transition:
+    background-color 12s linear,
+    color 12s linear;
+}
+
+body {
+  background-color: rgba(
+    10,
+    10,
+    10,
+    calc(0.85 + var(--presence-drift) * 0.05)
+  );
+}
